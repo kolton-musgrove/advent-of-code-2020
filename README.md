@@ -2,16 +2,16 @@
 
           .     .  .      +     .      .          .
      .       .      .     #       .           .
-        .      .         ###            .      .     
+        .      .         ###            .      .
       .      .   "#:. .:##"##:. .:#"  .      .
           .      . "##()"###"####"  .
-       .     "#:.    .:#"###"#:.    .:#"  .        .    
-     .          "#########"#####()##"        .       
+       .     "#:.    .:#"###"#:.    .:#"  .        .
+     .          "#########"#####()##"        .
         .    "#:.  "####"###"####"  .:#"   .       .
-     .     .  "###()##""##"#()"#######"                
-                ."##"#####"#####"##"           .     
+     .     .  "###()##""##"#()"#######"
+                ."##"#####"#####"##"           .
     .   "#:. ...  .:##"###"###"##:.  ... .:#"     .
-      .     "###()##"##"####()##"#######"      .    
+      .     "###()##"##"####()##"#######"      .
     .    .     "#####""#######""()####"    .      .
             .     "      000      "    .     .
        .         .   .   000     .        .       .
@@ -27,9 +27,9 @@ This year the storyline has consisted so far of taking a vacation from saving Ch
 
 ## Days
 
- 1. [Day one](https://github.com/kolton-musgrove/AdventOfCode/tree/main/day%201) focused on finding numbers in an array that sum to a specific number, in our case 2020!
- 2. [Day two](https://github.com/kolton-musgrove/AdventOfCode/tree/main/day%202) was about string parsing to enforce basic password security.
- 3. [Day three](https://github.com/kolton-musgrove/AdventOfCode/tree/main/day%203) focused on patterned-string parsing to find a safe travel route of tobaggans.
- 4. [Day four](https://github.com/kolton-musgrove/AdventOfCode/tree/main/day%204) was about passport validation and hashmaps!
- 5. Day five used principles of binary search to find seats on a plane.
- 6. Day six focused on group qualifications and binary representations.
+1. [Day one](https://github.com/kolton-musgrove/Advent-of-Code/tree/master/day%201) focused on finding numbers in an array that sum to a specific number, in our case 2020!
+2. [Day two](https://github.com/kolton-musgrove/Advent-of-Code/tree/master/day%202) was about string parsing to enforce basic password security.
+3. [Day three](https://github.com/kolton-musgrove/Advent-of-Code/tree/master/day%203) focused on patterned-string parsing to find a safe travel route of tobaggans.
+4. [Day four](https://github.com/kolton-musgrove/Advent-of-Code/tree/master/day%204) was about passport validation and hashmaps!
+5. [Day five](https://github.com/kolton-musgrove/Advent-of-Code/tree/master/day%205) used principles of binary search to find seats on a plane.
+6. [Day six](https://github.com/kolton-musgrove/Advent-of-Code/tree/master/day%206) focused on group qualifications and binary representations.

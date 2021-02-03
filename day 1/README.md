@@ -16,17 +16,13 @@ The naive approach to solving the classic sum-two problem is using a nested sear
 ```python
 # load data
 with open("day 1/input.txt", "r") as input:
-    # create an empty set to hold the data
-    inSet = set()
-
-    # add each item from the input list to the inSet
-    for num in input:
-        inSet.add(int(num))
+    # convert the input into a list
+    numList = [int(num) for num in input]
 
     # for every num in inSet, check if any value in inSet sums with that number to equal 2020. If a pair of numbers is found, print them and the answer
-    for num1 in inSet:
-        for num2 in inSet:
-            if (2020 - num1 - num2) in inSet:
+    for num1 in numList:
+        for num2 in numList:
+            if (2020 - num1 - num2) in numList:
                 print("Values: ", num1, num2)
                 print("Answer: ", num1 * num2)
 ```
@@ -86,6 +82,25 @@ with open("day 1/input.txt") as input:
 
 This function will give us an answer to the first problem in a reasonable amount of time regardless of the size of the input to the problem.
 
+However, a simpler and equally efficient option is to use sets.
+
+```python
+with open("day 1/input.txt") as input:
+    # I start with a set, append all of the values, and then convert to a list because of the time complexity for each additional item that will be saved if there are not duplcicates in the list. This is not a space optimal operation.
+    numSet = {int(num) for num in input}
+
+    # Itterate over all items in numSet, subtracting one number from 2020 per loop, and check if the different is in the numSet
+    for i in numSet:
+        target = 2020 - i
+
+        if target in numSet:
+            print("Values: ", i, target)
+            print("Answer: ", i * target)
+            break
+```
+
+While this looks like the naive approach, the use of sets allows for the item search process to take place in Big-Theta(1) versus just O(1).
+
 ## Problem 2
 
 The second problem of day one is very similar to the first. The only difference is that we now need to find a solution that returns three addends that sum to 2020. Like the last problem, our answer is the product of the three numbers.
@@ -142,4 +157,21 @@ with open("day 1/input.txt") as input:
                 print("Values: ", i, j, k)
                 print("answer: ", i * j * k)
                 exit()
+```
+
+Again though, an even more efficient solution is to use sets that can access and check for items in constant time.
+
+```python
+# again we use a list to set converstion to get rid of duplicates
+numSet = {int(num) for num in input}
+
+# I know, I know, nested for-loops are bad. You're right.
+for i in numSet:
+    for j in numSet:
+        target = 2020 - i - j
+
+        if target in numSet:
+            print("Values: ", i, j, target)
+            print("answer: ", i * j * target)
+            exit()
 ```

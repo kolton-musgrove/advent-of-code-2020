@@ -1,3 +1,17 @@
+# Most of the logic for the problems in day 3 can be contained in one function.
+# The only logic in the actual function calls is which paths are follwed be each problem
+
+def puzzle1():
+    print("\n Puzzle 1: \n")
+    print(pathSolve(3, 1))
+
+def puzzle2():
+    print("\n Puzzle 1: \n")
+
+    answer = (pathSolve(1, 1) * pathSolve(3, 1) * pathSolve(5, 1) * pathSolve(7, 1) * pathSolve(1, 2))
+    print(answer)
+
+
 def pathSolve(right, down):
     with open("day 3/input.txt") as terrain:
 
@@ -19,8 +33,5 @@ def pathSolve(right, down):
         
         return answer
 
-print(pathSolve(3, 1))
-
-answer = (pathSolve(1, 1) * pathSolve(3, 1) * pathSolve(5, 1) * pathSolve(7, 1) * pathSolve(1, 2))
-
-print(answer)
+puzzle1()
+puzzle2()

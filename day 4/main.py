@@ -1,7 +1,9 @@
+# For this problem we are going to need regular expressions
 import re
 
-
 def PuzzleOne():
+    print("\n Puzzle 1: \n")
+
     with open("day 4/input.txt") as passportData:
         # number of valid passports
         answer = 0
@@ -35,6 +37,8 @@ def PuzzleOne():
 
 
 def PuzzleTwo():
+    print("\n Puzzle 2: \n")
+
     with open("day 4/input.txt") as passportData:
         # number of valid passports
         answer = 0

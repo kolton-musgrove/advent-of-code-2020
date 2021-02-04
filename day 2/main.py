@@ -1,4 +1,6 @@
 def puzzleOne():
+    print("\n Puzzle 1: \n")
+
     with open("day 2/input.txt") as input:
         answer = 0
 
@@ -27,6 +29,8 @@ def puzzleOne():
 
 
 def puzzleTwo():
+    print("\n Puzzle 2: \n")
+
     with open("day 2/input.txt") as input:
         answer = 0
 

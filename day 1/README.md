@@ -24,7 +24,9 @@ for line in reader.lines() {
     v.push(integer);
 }
 
-// for every number in the vector, check if any other value in the vector sums with that number to equal 2020. If a pair of numbers is found, print them and the answer
+// for every number in the vector, check if any other value in the vector sums
+// with that number to equal 2020. If a pair of numbers is found, print them
+// and the answer.
 
 for num1 in &v {
     for num2 in &v {
@@ -57,7 +59,8 @@ fn binary_search(vector: &Vec<i32>, len: usize, target: &i32) -> Option<bool> {
         let mid_index = mid as usize;
         let val = vector[mid_index];
 
-        // return the index of the number if it is found, or set the high and low to reduce the search space
+        // return the index of the number if it is found, or set the high and
+        // low to reduce the search space
         if val == *target { return Some(true); }
 
         if val < *target { low = mid + 1; }
@@ -107,7 +110,8 @@ However, a simpler and equally efficient option is to use sets.
 	let input = File::open("./input.txt").unwrap();
 	let reader = BufReader::new(input);
 
-	// I decided to use a set because it eliminates duplicate values and reduces the iteration and accessing times to roughly 0.
+	// I decided to use a set because it eliminates duplicate values and
+    // reduces the iteration and accessing times to roughly 0.
 
 	for line in reader.lines() {
 		let integer = line.unwrap().parse::<i32>().unwrap();
@@ -115,7 +119,8 @@ However, a simpler and equally efficient option is to use sets.
 		set.insert(integer);
 	}
 
-	// iterate over all of the items in the set checking if the second value for the solution is in the set. If so, print and exit.
+	// iterate over all of the items in the set checking if the second value
+    // for the solution is in the set. If so, print and exit.
 	for number in &set {
 		let target: i32 = 2020 - number;
 
@@ -149,7 +154,9 @@ for line in reader.lines() {
     v.push(integer);
 }
 
-// for every number in the vector, check if any other value in the vector sums with that number to equal 2020. If a pair of numbers is found, print them and the answer
+// for every number in the vector, check if any other value in the vector
+// sums with that number to equal 2020. If a pair of numbers is found, print
+// them and the answer
 
 for num1 in &v {
     for num2 in &v {
@@ -182,7 +189,11 @@ for line in reader.lines() {
     set.insert(integer);
 }
 
-// While this implementation uses nested for loops, it is only O(n^2) in the worst case and is still the best solution to this problem. In terms of space complexity, it could be more efficient if I didn't copy all of the data into a set first, but I valued speed more than space in this instance.
+// While this implementation uses nested for loops, it is only O(n^2)
+// in the worst case and is still the best solution to this problem.
+// In terms of space complexity, it could be more efficient if I didn't
+// copy all of the data into a set first, but I valued speed more than
+// space in this instance.
 
 for number1 in &set {
     for number2 in &set {

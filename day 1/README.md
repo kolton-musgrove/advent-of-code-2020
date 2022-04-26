@@ -2,7 +2,7 @@
 
 - [Problem](https://adventofcode.com/2020/day/1)
 - [Code](https://github.com/kolton-musgrove/advent-of-code-2020/blob/master/day%201/main.rs)
-- [Walkthrough](https://dev.to/koltonmusgrove/advent-of-code-2020-day-1-problem-1-9n9)
+- [Walkthrough](https://dev.to/koltonmusgrove/advent-of-code-2020-day-1-3cfa)
 
 ## Walkthrough for Problem 1
 

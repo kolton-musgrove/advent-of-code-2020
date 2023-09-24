@@ -30,8 +30,7 @@ fn puzzle_one() {
         character_string = &parts_iter.next().unwrap()[0..1];
         password = parts_iter.next().unwrap();
 
-        let character_array = character_string.chars().collect::<Vec<_>>();
-        let character = character_array.get(0).unwrap();
+        let character = character_string.chars().nth(0).unwrap();
 
         let num_chars: usize = count_characters(password, character);
 
